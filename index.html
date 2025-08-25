@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arya</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <section id="home">
+        <header>
+        <nav>
+            <h3 onclick="scrollToSection('home')">Arya</h3>
+            <i id="menu-icon" class="fa-solid fa-bars hamburger"></i>
+            <ul id="nav-links">
+                <li onclick="menu()">Login</li>
+                <li onclick='scrollToSection("home")'>Home</li>
+                <li onclick='scrollToSection("story")'>About</li>
+                <li onclick='scrollToSection("services")'>Servies</li>
+                <li onclick='scrollToSection("review")'>Review</li>
+                <li onclick="menu()">Add To Cart</li>
+            </ul>
+            <button id="order" onclick="menu()">Order Now</button>
+        </nav>
+    </header>
+    </section>
+    <section id="main">
+        <div>
+            <h1>Welcome to Arya Restaurant</h1>
+            <p>Delicious food, Delivered to your doorstep</p>
+            <button id="menu" onclick="menu()">
+                Explore Menu
+            </button>
+        </div>
+    </section>
+    <section id="story">
+        <h2>Our Story</h2>
+        <div id="content">
+            <img src="./Data/food (6).jpeg" alt="">
+            <div class="text-box">
+                <h3>A Culinary Journey Since 2030</h3>
+                <p>Founded with a passion for authentic flavors and exceptional service,
+                Arya Restaurant has been serving memorable dining experiences for over two decades.
+                Our chefs blend traditional recipes with modern techniques to create dishes that delight the senses.
+                We source only the freshest local ingredients and combine them with imported specialties to craft 
+                a menu that celebrates global cuisine while honoring our culinary heritage.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="specialties" id="services">
+        <h1>Our Specialties</h1>
+        <p class="specialties-text">
+            Discover our carefully crafted menu featuring the finest ingredients
+        </p>
+        <div class="boder"></div>
+        <div class="specialties-items">
+            <div class="food-items">
+                <img src="./Data/biryani.jpg" alt="">
+                <h3>Indian</h3>
+                <p class="food-text">Experience the royal taste of our aromatic biryani, layered with spices and love.</p>
+                <p class="price">₹150</p>
+                <button class="add-to-cart">Add To Cart</button>
+            </div>
+            <div class="food-items">
+                <img src="./Data/noodles.jpg" alt="">
+                <h3>Chinese</h3>
+                <p class="food-text">Savor our sizzling noodles, tossed to perfection with rich flavors and fresh ingredients</p>
+                <p class="price">₹80</p>
+                <button class="add-to-cart">Add To Cart</button>
+            </div>
+            <div class="food-items">
+                <img src="./Data/pizza.jpg" alt="">
+                <h3>Italian</h3>
+                <p class="food-text">Savor the rich flavors of our Kadhai Paneer, cooked to perfection with fresh spices.</p>
+                <p class="price">₹360</p>
+                <button class="add-to-cart">Add To Cart</button>
+            </div>
+        </div>
+        <button id="view-more" onclick="viewMore()">View More</button>
+    </section>
+    <section class="review" id="review">
+        <h1>Customer Review</h1>
+        <p id="review-text">What our valued customers say about us</p>
+        <div class="boder"></div>
+        <div class="review-items">
+            <div class="reviews-text">
+                <img src="./Data/me (1).jpg" alt="">
+                <div class="review-content">
+                    <h3>Aditya Kumar</h3>
+                    <h1>⭐⭐⭐⭐⭐</h1>
+                    <p>"Absolutely loved the food here! The flavors were fresh and authentic. 
+                        The staff was super friendly and made us feel welcome. 
+                        Definitely coming back with my family."
+                    </p>
+                </div>
+            </div>
+            <div class="reviews-text">
+                <img src="./Data/me (2).jpg" alt="">
+                <div class="review-content">
+                    <h3>Aditya Kumar</h3>
+                    <h1>⭐⭐⭐⭐⭐</h1>
+                    <p>"Great place to eat! The restaurant is clean, beautifully decorated, and the menu has a wide variety. 
+                        Every dish we tried was delicious, and the prices are very reasonable."
+                    </p>
+                </div>                
+            </div>
+            <div class="reviews-text">
+                <img src="./Data/me (3).jpg" alt="">
+                <div class="review-content">
+                    <h3>Aditya Kumar</h3>
+                    <h1>⭐⭐⭐⭐⭐</h1>
+                    <p>"I had an amazing time here. The food tasted home-cooked with a touch of uniqueness. 
+                        The staff went above and beyond to make sure we were comfortable. A must-visit spot!"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="brand">
+            <h1>Arya</h1>
+            <p>Serving authentic flavors with love & passion since 2030</p>
+        </div>
+
+        <div class="time">
+            <h2>Hours</h2>
+            <p>Monday - Friday: 10am - 11pm</p>
+            <p>Saturday - Sunday: 11am - 12pm</p>
+        </div>
+
+        <div class="contact">
+            <h2>Contact</h2>
+            <p>📞 +91 0001112223</p>
+            <p>📧 adityakr3135@gmail.com</p>
+        </div>
+
+        <div class="follow-us">
+            <h2>Follow Us</h2>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/index.js"></script>
+
+
+    
+</body>
+
+</html>
